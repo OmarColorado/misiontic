@@ -1,0 +1,106 @@
+/*se le pone asterisco para resetear las opciones que vienen por defecto en el navegador*/
+*{
+    margin: 0px;
+    padding: 0px; /*margen interno*/
+}
+
+body{
+    background: rgb(138, 138, 238);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*cambio el id que quiera en este caso es el container y solo cambiara ese*/
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid rgb(34, 33, 33);
+
+}
+
+/*todas las cabeceras que cree van a cambiar*/
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center; /*centrar texto*/
+    line-height: 100px; /*centrar texto vercicalmente, se pone la misma altura que tiene la caja*/
+    color: white;
+    border-bottom: 3px dashed gray; ; /*poner border por abajo*/
+
+
+
+}
+
+/*darle color al menu*/
+nav{
+    background: rgb(60, 183, 221);
+    height: 50px; /*hay que darle altura para que se pueda ver*/
+    border-bottom:1px solid black;
+}
+
+/*menu*/
+nav ul li {
+    float: left; /*que elementos del menu se pongan uno al lado del otro*/
+    list-style: none; /*para que no tenga ningun estilo por defecto*/
+    margin: 10px;
+    line-height: 30px; /*centrar los links del menu vercicalmente*/
+}
+
+/*cree una clase en html para que se queden los elemetos cada uno en su renglon, y lo llamo en el css para darle los atributos*/
+.clearfix{
+    clear: both;
+}
+
+#content {
+    float: left;
+    width: 80%;
+    min-height: 500px; /*altura minima*/
+    background: rgb(42, 233, 191);
+}
+
+.article{
+    color: rgb(240, 244, 245);
+    margin-top: 25px;
+    margin-bottom: 15;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-left: 40px;
+
+}
+
+.article:first-child {
+    padding-top: 10px;
+    border-top: 1px solid #EEE;
+
+    /*
+.article h2{
+        font-size: 10px ;    
+}
+*/
+
+}
+
+aside {
+    float: left;
+    width: calc(20% - 20px);
+    background: coral;
+    min-height: 500px; /*altura minima*/
+    padding: 10px; /*margenes por todo lado, pero tengo que ponerle "calc" arriba para que me corrija y no se pase del 20% que le dimos*/
+
+    
+}
+
+/*pie de pagina*/
+footer{
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*https://www.youtube.com/watch?v=3yM5uXp-T_0&t=597s&ab_channel=VictorRoblesWEB
+*/
